@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.0.1</Version>
+    <Authors>Matt Emson</Authors>
+    <Company>Ratcow Software</Company>
+    <Description>Serialization and Xml manipulation tools.</Description>
+    <PackageProjectUrl>https://github.com/memsom/ratcowsoftopensource</PackageProjectUrl>
+    <PackageIconUrl>https://pbs.twimg.com/profile_images/414756286/ratcowmascot_400x400.PNG</PackageIconUrl>
+    <PackageReleaseNotes>Initial version</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+</Project>
