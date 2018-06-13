@@ -67,6 +67,16 @@ namespace Ratcow.Serialization
             }
         }
 
+        public static string Serialize(Type t, object instance)
+        {
+            var serializer = new XmlSerializer(t);
+            using (var stringWriter = new Utf8StringWriter())
+            {
+                serializer.Serialize(stringWriter, instance);
+                return stringWriter.ToString();
+            }
+        }
+
         public static object Deserialize(Type t, string data)
         {
             var serializer = new XmlSerializer(t);

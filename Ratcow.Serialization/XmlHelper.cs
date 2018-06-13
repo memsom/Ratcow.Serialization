@@ -29,6 +29,7 @@
  *
  */
 
+using System;
 using System.Xml;
 
 namespace Ratcow.Serialization
@@ -64,6 +65,12 @@ namespace Ratcow.Serialization
         public static XmlElement InstanceToElement<T>(T instance)
         {
             var instanceString = SerializationHelper.Serialize(instance);
+            return StringToElement(instanceString);
+        }
+
+        public static XmlElement InstanceToElement(Type t, object instance)
+        {
+            var instanceString = SerializationHelper.Serialize(t, instance);
             return StringToElement(instanceString);
         }
 
